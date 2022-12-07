@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    private UserDao dao = new UserDaoHibernateImpl();
+    private UserDao dao = new UserDaoJDBCImpl();
     //private Connection connection = util.getConnection();
     public void createUsersTable() {
         dao.createUsersTable();
